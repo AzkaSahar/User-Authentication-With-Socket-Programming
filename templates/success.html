@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container my-5 text-center">
+        <h2>Welcome, {{ username }}!</h2>
+        <p>You are logged in successfully.</p>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Go to Home</a>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger ">Logout</a>
+    </div>
+</body>
+</html>
