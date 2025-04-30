@@ -2,15 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .success-page {
+           
+            margin: auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .profile-header h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .info-section {
+            margin-bottom: 20px;
+        }
+        .info-section h4 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .info-section p {
+            font-size: 16px;
+            color: #555555;
+        }
+        .btn-custom {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .btn-custom:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body class="bg-light">
-    <div class="container my-5 text-center">
-        <h2>Welcome, {{ username }}!</h2>
-        <p>You are logged in successfully.</p>
-        <a href="{{ url_for('index') }}" class="btn btn-primary">Go to Home</a>
-        <a href="{{ url_for('logout') }}" class="btn btn-danger ">Logout</a>
+    <div class="container my-5">
+        <div class="success-page">
+            <div class="profile-header">
+                <img src="static/robot.png" alt="Profile Picture">
+                <h2>Welcome, {{ username }}!</h2>
+                <p class="text-muted">You are logged in successfully.</p>
+            </div>
+
+            <div class="info-section">
+                <h4>Did you know?</h4>
+                <p><strong>Computer Networks:</strong> A computer network is a set of computers connected to each other through various communication channels, such as cables or wireless technologies. It enables the sharing of data, resources, and services.</p>
+            </div>
+
+            <div class="info-section">
+                <h4>Socket Programming Basics:</h4>
+                <p><strong>Socket:</strong> A socket is one endpoint of a two-way communication link between two programs running on the network. It is used for inter-process communication (IPC) and enables the exchange of data over a network using TCP/IP protocols.</p>
+                <p><strong>TCP Sockets:</strong> TCP sockets provide reliable, connection-oriented communication. They ensure that data sent from one end reaches the other end in the correct order and without loss.</p>
+            </div>
+
+            <div class="text-center">
+                <a href="{{ url_for('index') }}" class="btn btn-primary btn-block btn-custom">Go to Home</a>
+                <a href="{{ url_for('logout') }}" class="btn btn-danger btn-block mt-3">Logout</a>
+            </div>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

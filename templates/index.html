@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Authentication</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #007bff;
+        }
+    </style>
 </head>
 <body class="bg-light">
-    <div class="container text-center my-5">
+    <div class="container hero text-center my-5">
         <h1>Welcome to the User Authentication System</h1>
-        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg my-3">Login</a>
-        <a href="{{ url_for('register') }}" class="btn btn-secondary btn-lg my-3">Register</a>
+        <p class="lead">Securely manage your account</p>
+        <div class="d-flex justify-content-center">
+            <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg mx-2">Login</a>
+            <a href="{{ url_for('register') }}" class="btn btn-secondary btn-lg mx-2">Register</a>
+        </div>
     </div>
 </body>
 </html>

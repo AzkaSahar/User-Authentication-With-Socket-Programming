@@ -1,29 +1,35 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 import socket
-import hashlib
 from flask_bootstrap import Bootstrap
+import ssl
+import logging
+
+# Setup logging
+logging.basicConfig(filename='app.log', level=logging.INFO,
+                    format='%(asctime)s - CLIENT - %(levelname)s - %(message)s')
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Needed for sessions and flash messages
+app.secret_key = 'your_secret_key'
 Bootstrap(app)
 
-# Server address (the server should be running)
 SERVER_HOST = 'localhost'
 SERVER_PORT = 12345
 
-import ssl
 # SSL context for client
 context = ssl.create_default_context()
 context.check_hostname = False
 context.verify_mode = ssl.CERT_NONE
 
-# Function to communicate securely with the server via socket
 def send_request_to_server(request_data):
-    with socket.create_connection((SERVER_HOST, SERVER_PORT)) as sock:
-        with context.wrap_socket(sock, server_hostname=SERVER_HOST) as ssock:
-            ssock.sendall(request_data.encode('utf-8'))
-            response = ssock.recv(1024).decode('utf-8')
-    return response
+    try:
+        with socket.create_connection((SERVER_HOST, SERVER_PORT)) as sock:
+            with context.wrap_socket(sock, server_hostname=SERVER_HOST) as ssock:
+                ssock.sendall(request_data.encode('utf-8'))
+                response = ssock.recv(1024).decode('utf-8')
+        return response
+    except Exception as e:
+        logging.error(f"Error communicating with server: {e}")
+        return "Error: Could not connect to server"
 
 @app.route('/')
 def index():
@@ -34,15 +40,16 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
         login_request = f"LOGIN:{username}:{password}"
         response = send_request_to_server(login_request)
 
         if "Success" in response:
-            session['username'] = username  # Save username in session
+            session['username'] = username
+            logging.info(f"User '{username}' logged in successfully.")
             flash('Login successful!', 'success')
             return redirect(url_for('success'))
         else:
+            logging.warning(f"Failed login attempt for user '{username}'.")
             flash('Invalid credentials. Please try again.', 'danger')
 
     return render_template('login.html')
@@ -52,14 +59,15 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
         register_request = f"REGISTER:{username}:{password}"
         response = send_request_to_server(register_request)
 
         if "Success" in response:
+            logging.info(f"User '{username}' registered successfully.")
             flash('Registration successful! You can now log in.', 'success')
             return redirect(url_for('login'))
         else:
+            logging.warning(f"Failed registration for user '{username}': {response}")
             flash(response, 'danger')
 
     return render_template('register.html')
@@ -73,7 +81,8 @@ def success():
 
 @app.route('/logout')
 def logout():
-    session.pop('username', None)
+    username = session.pop('username', None)
+    logging.info(f"User '{username}' logged out.")
     flash('You have been logged out.', 'info')
     return redirect(url_for('login'))
 

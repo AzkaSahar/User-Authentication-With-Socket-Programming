@@ -1,38 +1,109 @@
-2025-04-27 21:26:18,122:WARNING: * Debugger is active!
-2025-04-27 21:26:18,127:INFO: * Debugger PIN: 624-497-162
-2025-04-27 21:26:18,162:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2025-04-27 21:26:49,532:INFO: * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\client-authentication\\app.py', reloading
-2025-04-27 21:26:50,226:WARNING: * Debugger is active!
-2025-04-27 21:26:50,233:INFO: * Debugger PIN: 624-497-162
-2025-04-27 21:26:50,274:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2025-04-27 21:28:14,542:INFO: * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\client-authentication\\app.py', reloading
-2025-04-27 21:28:15,126:WARNING: * Debugger is active!
-2025-04-27 21:28:15,131:INFO: * Debugger PIN: 624-497-162
-2025-04-27 21:28:15,180:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2025-04-27 21:28:17,972:INFO:127.0.0.1 - - [27/Apr/2025 21:28:17] "GET / HTTP/1.1" 200 -
-2025-04-27 21:28:21,741:INFO:127.0.0.1 - - [27/Apr/2025 21:28:21] "GET /register HTTP/1.1" 200 -
-2025-04-27 21:28:25,812:INFO:127.0.0.1 - - [27/Apr/2025 21:28:25] "GET /login HTTP/1.1" 200 -
-2025-04-27 21:28:35,358:INFO:127.0.0.1 - - [27/Apr/2025 21:28:35] "[32mPOST /login HTTP/1.1[0m" 302 -
-2025-04-27 21:28:35,370:INFO:127.0.0.1 - - [27/Apr/2025 21:28:35] "GET /success HTTP/1.1" 200 -
-2025-04-27 21:28:41,298:INFO:127.0.0.1 - - [27/Apr/2025 21:28:41] "[32mGET /logout HTTP/1.1[0m" 302 -
-2025-04-27 21:28:41,308:INFO:127.0.0.1 - - [27/Apr/2025 21:28:41] "GET /login HTTP/1.1" 200 -
-2025-04-27 21:28:54,476:INFO:127.0.0.1 - - [27/Apr/2025 21:28:54] "POST /login HTTP/1.1" 200 -
-2025-04-27 21:29:43,958:INFO:127.0.0.1 - - [27/Apr/2025 21:29:43] "[32mPOST /login HTTP/1.1[0m" 302 -
-2025-04-27 21:29:43,963:INFO:127.0.0.1 - - [27/Apr/2025 21:29:43] "GET /success HTTP/1.1" 200 -
-2025-04-27 21:29:50,330:INFO:127.0.0.1 - - [27/Apr/2025 21:29:50] "GET / HTTP/1.1" 200 -
-2025-04-27 21:29:53,315:INFO:127.0.0.1 - - [27/Apr/2025 21:29:53] "GET /register HTTP/1.1" 200 -
-2025-04-27 21:29:59,494:INFO:127.0.0.1 - - [27/Apr/2025 21:29:59] "POST /register HTTP/1.1" 200 -
-2025-04-27 21:31:13,443:INFO: * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\client-authentication\\app.py', reloading
-2025-04-27 21:31:14,188:WARNING: * Debugger is active!
-2025-04-27 21:31:14,196:INFO: * Debugger PIN: 624-497-162
-2025-04-27 21:31:14,245:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2025-04-27 21:31:25,671:INFO: * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\client-authentication\\app.py', reloading
-2025-04-27 21:31:26,240:WARNING: * Debugger is active!
-2025-04-27 21:31:26,246:INFO: * Debugger PIN: 624-497-162
-2025-04-27 21:31:26,296:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2025-04-27 21:33:49,438:INFO: * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\client-authentication\\server.py', reloading
-2025-04-27 21:33:50,088:WARNING: * Debugger is active!
-2025-04-27 21:33:50,096:INFO: * Debugger PIN: 624-497-162
-2025-04-27 21:33:50,147:INFO: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2025-04-27 21:34:11,171:INFO:127.0.0.1 - - [27/Apr/2025 21:34:11] "GET / HTTP/1.1" 200 -
-2025-04-27 21:35:01,230:INFO: * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\client-authentication\\app.py', reloading
+2025-04-30 23:13:32,389 - CLIENT - WARNING -  * Debugger is active!
+2025-04-30 23:13:32,394 - CLIENT - INFO -  * Debugger PIN: 266-960-421
+2025-04-30 23:13:32,429 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-04-30 23:13:47,097 - CLIENT - INFO -  * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\user-authentication\\authserver.py', reloading
+2025-04-30 23:13:47,676 - CLIENT - WARNING -  * Debugger is active!
+2025-04-30 23:13:47,682 - CLIENT - INFO -  * Debugger PIN: 266-960-421
+2025-04-30 23:13:47,721 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-04-30 23:16:23,992 - SERVER - INFO - Server started securely on localhost:12345
+2025-04-30 23:16:56,144 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:16:56] "GET /success HTTP/1.1" 200 -
+2025-04-30 23:16:57,105 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:16:57] "GET /success HTTP/1.1" 200 -
+2025-04-30 23:16:59,337 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:16:59] "GET / HTTP/1.1" 200 -
+2025-04-30 23:17:00,749 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:17:00] "GET /login HTTP/1.1" 200 -
+2025-04-30 23:17:09,010 - SERVER - INFO - Connection accepted from ('127.0.0.1', 51817)
+2025-04-30 23:17:09,011 - SERVER - INFO - Request received: LOGIN:sum:123
+2025-04-30 23:17:09,018 - SERVER - WARNING - Authentication failed for user 'sum'.
+2025-04-30 23:17:09,020 - CLIENT - WARNING - Failed login attempt for user 'sum'.
+2025-04-30 23:17:09,023 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:17:09] "POST /login HTTP/1.1" 200 -
+2025-04-30 23:17:17,553 - SERVER - INFO - Connection accepted from ('127.0.0.1', 51820)
+2025-04-30 23:17:17,554 - SERVER - INFO - Request received: LOGIN:sumaiya:123
+2025-04-30 23:17:17,557 - SERVER - INFO - User 'sumaiya' authenticated successfully.
+2025-04-30 23:17:17,558 - CLIENT - INFO - User 'sumaiya' logged in successfully.
+2025-04-30 23:17:17,560 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:17:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-30 23:17:17,569 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:17:17] "GET /success HTTP/1.1" 200 -
+2025-04-30 23:51:12,717 - CLIENT - INFO -  * Restarting with stat
+2025-04-30 23:51:13,209 - CLIENT - WARNING -  * Debugger is active!
+2025-04-30 23:51:13,216 - CLIENT - INFO -  * Debugger PIN: 266-960-421
+2025-04-30 23:51:13,250 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-04-30 23:51:28,607 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:51:28] "GET / HTTP/1.1" 200 -
+2025-04-30 23:51:36,312 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:51:36] "GET /login HTTP/1.1" 200 -
+2025-04-30 23:54:58,310 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:54:58] "GET /login HTTP/1.1" 200 -
+2025-04-30 23:55:04,900 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:55:04] "GET /register HTTP/1.1" 200 -
+2025-04-30 23:55:35,204 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-04-30 23:55:35,205 - CLIENT - WARNING - Failed login attempt for user 'azka'.
+2025-04-30 23:55:35,208 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:55:35] "POST /login HTTP/1.1" 200 -
+2025-04-30 23:55:39,260 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:55:39] "GET /register HTTP/1.1" 200 -
+2025-04-30 23:55:49,100 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-04-30 23:55:49,100 - CLIENT - WARNING - Failed registration for user 'azka': Error: Could not connect to server
+2025-04-30 23:55:49,106 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:55:49] "POST /register HTTP/1.1" 200 -
+2025-04-30 23:56:12,431 - SERVER - INFO - Server started securely on localhost:12345
+2025-04-30 23:56:22,497 - SERVER - INFO - Connection accepted from ('127.0.0.1', 53281)
+2025-04-30 23:56:22,497 - SERVER - INFO - Request received: REGISTER:azka:123
+2025-04-30 23:56:22,511 - SERVER - INFO - User 'azka' registered successfully.
+2025-04-30 23:56:22,512 - CLIENT - INFO - User 'azka' registered successfully.
+2025-04-30 23:56:22,514 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:56:22] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-30 23:56:22,524 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:56:22] "GET /login HTTP/1.1" 200 -
+2025-04-30 23:56:43,446 - SERVER - INFO - Connection accepted from ('127.0.0.1', 53317)
+2025-04-30 23:56:43,446 - SERVER - INFO - Request received: LOGIN:azka:123
+2025-04-30 23:56:43,449 - SERVER - INFO - User 'azka' authenticated successfully.
+2025-04-30 23:56:43,450 - CLIENT - INFO - User 'azka' logged in successfully.
+2025-04-30 23:56:43,452 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:56:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-30 23:56:43,475 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:56:43] "GET /success HTTP/1.1" 200 -
+2025-04-30 23:57:55,306 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:57:55] "GET / HTTP/1.1" 200 -
+2025-04-30 23:57:56,650 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:57:56] "GET /register HTTP/1.1" 200 -
+2025-04-30 23:57:59,413 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:57:59] "GET /login HTTP/1.1" 200 -
+2025-04-30 23:59:36,594 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:59:36] "GET /login HTTP/1.1" 200 -
+2025-04-30 23:59:39,484 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:59:39] "GET /register HTTP/1.1" 200 -
+2025-04-30 23:59:42,646 - CLIENT - INFO - 127.0.0.1 - - [30/Apr/2025 23:59:42] "GET /login HTTP/1.1" 200 -
+2025-05-01 00:01:03,168 - SERVER - INFO - Connection accepted from ('127.0.0.1', 53720)
+2025-05-01 00:01:03,169 - SERVER - INFO - Request received: LOGIN:azka:123
+2025-05-01 00:01:03,170 - SERVER - INFO - User 'azka' authenticated successfully.
+2025-05-01 00:01:03,171 - CLIENT - INFO - User 'azka' logged in successfully.
+2025-05-01 00:01:03,173 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:01:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-01 00:01:03,190 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:01:03] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:01:30,703 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:01:30] "GET / HTTP/1.1" 200 -
+2025-05-01 00:03:40,380 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:03:40] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:04:24,048 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:04:24] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:05:16,970 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:05:16] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:05:53,843 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:05:53] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:09:45,841 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:09:45] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:09:45,858 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:09:45] "[33mGET /robot.png HTTP/1.1[0m" 404 -
+2025-05-01 00:09:48,280 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:09:48] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:09:48,302 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:09:48] "[33mGET /robot.png HTTP/1.1[0m" 404 -
+2025-05-01 00:09:49,014 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:09:49] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:09:49,034 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:09:49] "[33mGET /robot.png HTTP/1.1[0m" 404 -
+2025-05-01 00:10:39,423 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:10:39] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:10:39,566 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:10:39] "GET /static/robot.png HTTP/1.1" 200 -
+2025-05-01 00:10:48,885 - CLIENT - INFO - User 'azka' logged out.
+2025-05-01 00:10:48,887 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:10:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-01 00:10:48,898 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:10:48] "GET /login HTTP/1.1" 200 -
+2025-05-01 00:10:50,768 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:10:50] "GET /register HTTP/1.1" 200 -
+2025-05-01 00:10:55,831 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:10:55] "GET / HTTP/1.1" 200 -
+2025-05-01 00:11:40,849 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:11:40] "GET /login HTTP/1.1" 200 -
+2025-05-01 00:11:53,558 - SERVER - INFO - Connection accepted from ('127.0.0.1', 54591)
+2025-05-01 00:11:53,559 - SERVER - INFO - Request received: LOGIN:me:432
+2025-05-01 00:11:53,560 - SERVER - WARNING - Authentication failed for user 'me'.
+2025-05-01 00:11:53,560 - CLIENT - WARNING - Failed login attempt for user 'me'.
+2025-05-01 00:11:53,562 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:11:53] "POST /login HTTP/1.1" 200 -
+2025-05-01 00:11:56,944 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:11:56] "GET /register HTTP/1.1" 200 -
+2025-05-01 00:12:07,085 - SERVER - INFO - Connection accepted from ('127.0.0.1', 54598)
+2025-05-01 00:12:07,085 - SERVER - INFO - Request received: REGISTER:azka:123
+2025-05-01 00:12:07,089 - SERVER - WARNING - Registration failed: Username 'azka' already exists.
+2025-05-01 00:12:07,090 - CLIENT - WARNING - Failed registration for user 'azka': Error: Username already exists.
+2025-05-01 00:12:07,092 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:07] "POST /register HTTP/1.1" 200 -
+2025-05-01 00:12:17,776 - SERVER - INFO - Connection accepted from ('127.0.0.1', 54604)
+2025-05-01 00:12:17,776 - SERVER - INFO - Request received: REGISTER:me:432
+2025-05-01 00:12:17,789 - SERVER - INFO - User 'me' registered successfully.
+2025-05-01 00:12:17,790 - CLIENT - INFO - User 'me' registered successfully.
+2025-05-01 00:12:17,795 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:17] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-05-01 00:12:17,807 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:17] "GET /login HTTP/1.1" 200 -
+2025-05-01 00:12:27,586 - SERVER - INFO - Connection accepted from ('127.0.0.1', 54610)
+2025-05-01 00:12:27,587 - SERVER - INFO - Request received: LOGIN:me:432
+2025-05-01 00:12:27,594 - SERVER - INFO - User 'me' authenticated successfully.
+2025-05-01 00:12:27,594 - CLIENT - INFO - User 'me' logged in successfully.
+2025-05-01 00:12:27,596 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-01 00:12:27,604 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:27] "GET /success HTTP/1.1" 200 -
+2025-05-01 00:12:27,644 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:27] "[36mGET /static/robot.png HTTP/1.1[0m" 304 -
+2025-05-01 00:12:38,940 - CLIENT - INFO - User 'me' logged out.
+2025-05-01 00:12:38,941 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-01 00:12:38,957 - CLIENT - INFO - 127.0.0.1 - - [01/May/2025 00:12:38] "GET /login HTTP/1.1" 200 -
