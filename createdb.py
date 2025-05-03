@@ -1,12 +1,11 @@
 import sqlite3
 
-# Connect to SQLite database (it will create if it doesn't exist)
-conn = sqlite3.connect('users.db')
+conn = sqlite3.connect("users.db")
 cursor = conn.cursor()
 
-# Create users table if it doesn't exist
+cursor.execute("DROP TABLE IF EXISTS users")
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS users (
+    CREATE TABLE users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT NOT NULL UNIQUE,
         password BLOB NOT NULL
@@ -16,4 +15,4 @@ cursor.execute('''
 conn.commit()
 conn.close()
 
-print("Database and table created successfully!")
+print("Users table reset. You can now register users again.")

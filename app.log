@@ -184,3 +184,124 @@
 2025-05-03 18:23:13,990 - CLIENT - WARNING -  * Debugger is active!
 2025-05-03 18:23:14,024 - CLIENT - INFO -  * Debugger PIN: 266-960-421
 2025-05-03 18:23:14,137 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-05-03 21:39:15,049 - SERVER - INFO - Server started securely on localhost:12345
+2025-05-03 21:39:23,852 - CLIENT - INFO -  * Restarting with stat
+2025-05-03 21:39:24,430 - CLIENT - WARNING -  * Debugger is active!
+2025-05-03 21:39:24,435 - CLIENT - INFO -  * Debugger PIN: 266-960-421
+2025-05-03 21:39:24,471 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-05-03 21:39:32,589 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:39:32] "GET / HTTP/1.1" 200 -
+2025-05-03 21:39:35,505 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:39:35] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:39:44,064 - SERVER - INFO - Connection accepted from ('127.0.0.1', 62921)
+2025-05-03 21:39:44,064 - SERVER - INFO - Request received: LOGIN:sumaiya:123
+2025-05-03 21:39:44,065 - CLIENT - WARNING - Failed login attempt for user 'sumaiya'.
+2025-05-03 21:39:44,067 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:39:44] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:40:01,569 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:40:01,569 - CLIENT - WARNING - Failed login attempt for user 'sumaiya'.
+2025-05-03 21:40:01,570 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:40:01] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:40:12,967 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:40:12,968 - CLIENT - WARNING - Failed login attempt for user 'sumaiya'.
+2025-05-03 21:40:12,972 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:40:12] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:48:18,412 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:48:18] "GET / HTTP/1.1" 200 -
+2025-05-03 21:48:19,974 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:48:19,974 - CLIENT - WARNING - Failed login attempt for user 'sumaiya'.
+2025-05-03 21:48:19,975 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:48:19] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:48:26,642 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:48:26] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:48:37,472 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:48:37,472 - CLIENT - WARNING - Failed login attempt for user 'shahmeer'.
+2025-05-03 21:48:37,474 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:48:37] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:48:40,363 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:48:40] "GET /register HTTP/1.1" 200 -
+2025-05-03 21:48:50,629 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:48:50,629 - CLIENT - WARNING - Failed registration for user 'shahmeer': Error: Could not connect to server
+2025-05-03 21:48:50,630 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:48:50] "POST /register HTTP/1.1" 200 -
+2025-05-03 21:49:45,616 - SERVER - INFO - Server started securely on localhost:12345
+2025-05-03 21:49:55,966 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63378)
+2025-05-03 21:49:55,966 - SERVER - INFO - Request received: REGISTER:shahmeer:123
+2025-05-03 21:49:56,316 - SERVER - INFO - User 'shahmeer' registered successfully.
+2025-05-03 21:49:56,316 - CLIENT - INFO - User 'shahmeer' registered successfully.
+2025-05-03 21:49:56,317 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:49:56] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-05-03 21:49:56,323 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:49:56] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:50:07,248 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63388)
+2025-05-03 21:50:07,248 - SERVER - INFO - Request received: LOGIN:shahmeer:123
+2025-05-03 21:50:07,573 - SERVER - INFO - User 'shahmeer' authenticated successfully.
+2025-05-03 21:50:07,574 - CLIENT - INFO - User 'shahmeer' logged in. JWT issued.
+2025-05-03 21:50:07,575 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-03 21:50:07,580 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:07] "GET /success HTTP/1.1" 200 -
+2025-05-03 21:50:07,701 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:07] "[36mGET /static/robot.png HTTP/1.1[0m" 304 -
+2025-05-03 21:50:22,564 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:22] "GET / HTTP/1.1" 200 -
+2025-05-03 21:50:28,041 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:28] "GET /success HTTP/1.1" 200 -
+2025-05-03 21:50:28,074 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:28] "[36mGET /static/robot.png HTTP/1.1[0m" 304 -
+2025-05-03 21:50:35,530 - CLIENT - INFO - User 'shahmeer' logged out. JWT cleared.
+2025-05-03 21:50:35,531 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-03 21:50:35,541 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:35] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:50:39,091 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:39] "GET / HTTP/1.1" 200 -
+2025-05-03 21:50:41,176 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:41] "[32mGET /success HTTP/1.1[0m" 302 -
+2025-05-03 21:50:41,186 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:41] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:50:57,378 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63429)
+2025-05-03 21:50:57,378 - SERVER - INFO - Request received: LOGIN:shahmeer:123
+2025-05-03 21:50:57,701 - SERVER - INFO - User 'shahmeer' authenticated successfully.
+2025-05-03 21:50:57,701 - CLIENT - INFO - User 'shahmeer' logged in. JWT issued.
+2025-05-03 21:50:57,702 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-03 21:50:57,708 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:57] "GET /success HTTP/1.1" 200 -
+2025-05-03 21:50:57,740 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:50:57] "[36mGET /static/robot.png HTTP/1.1[0m" 304 -
+2025-05-03 21:54:48,803 - CLIENT - INFO - User 'shahmeer' logged out. JWT cleared.
+2025-05-03 21:54:48,805 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:54:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-03 21:54:48,815 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:54:48] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:55:24,478 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63554)
+2025-05-03 21:55:24,478 - SERVER - INFO - Request received: LOGIN:azka:123
+2025-05-03 21:55:24,479 - CLIENT - WARNING - Failed login attempt for user 'azka'.
+2025-05-03 21:55:24,481 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:55:24] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:55:36,210 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:55:36,210 - CLIENT - WARNING - Failed login attempt for user 'Azka'.
+2025-05-03 21:55:36,211 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:55:36] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:56:00,350 - SERVER - INFO - Server started securely on localhost:12345
+2025-05-03 21:56:11,374 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63596)
+2025-05-03 21:56:11,374 - SERVER - INFO - Request received: LOGIN:azka:123
+2025-05-03 21:56:11,376 - CLIENT - WARNING - Failed login attempt for user 'azka'.
+2025-05-03 21:56:11,377 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:56:11] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:56:23,347 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:56:23,347 - CLIENT - WARNING - Failed login attempt for user 'azka'.
+2025-05-03 21:56:23,348 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:56:23] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:57:07,537 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:57:07] "GET /register HTTP/1.1" 200 -
+2025-05-03 21:57:27,548 - CLIENT - ERROR - Error communicating with server: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-05-03 21:57:27,548 - CLIENT - WARNING - Failed registration for user 'shahmeer': Error: Could not connect to server
+2025-05-03 21:57:27,549 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:57:27] "POST /register HTTP/1.1" 200 -
+2025-05-03 21:57:40,568 - SERVER - INFO - Server started securely on localhost:12345
+2025-05-03 21:58:01,446 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63737)
+2025-05-03 21:58:01,446 - SERVER - INFO - Request received: REGISTER:shahmeer:123
+2025-05-03 21:58:01,787 - SERVER - WARNING - Registration failed: Username 'shahmeer' already exists.
+2025-05-03 21:58:01,788 - CLIENT - WARNING - Failed registration for user 'shahmeer': Error: Username already exists.
+2025-05-03 21:58:01,788 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:01] "POST /register HTTP/1.1" 200 -
+2025-05-03 21:58:04,976 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:04] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:58:22,737 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63744)
+2025-05-03 21:58:22,737 - SERVER - INFO - Request received: LOGIN:shahmeer:123
+2025-05-03 21:58:23,072 - SERVER - INFO - User 'shahmeer' authenticated successfully.
+2025-05-03 21:58:23,073 - CLIENT - INFO - User 'shahmeer' logged in. JWT issued.
+2025-05-03 21:58:23,074 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-03 21:58:23,079 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:23] "GET /success HTTP/1.1" 200 -
+2025-05-03 21:58:23,107 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:23] "[36mGET /static/robot.png HTTP/1.1[0m" 304 -
+2025-05-03 21:58:26,908 - CLIENT - INFO - User 'shahmeer' logged out. JWT cleared.
+2025-05-03 21:58:26,910 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-03 21:58:26,916 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:26] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:58:29,128 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:29] "GET /register HTTP/1.1" 200 -
+2025-05-03 21:58:41,991 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63770)
+2025-05-03 21:58:41,991 - SERVER - INFO - Request received: REGISTER:azka:123
+2025-05-03 21:58:42,301 - SERVER - WARNING - Registration failed: Username 'azka' already exists.
+2025-05-03 21:58:42,302 - CLIENT - WARNING - Failed registration for user 'azka': Error: Username already exists.
+2025-05-03 21:58:42,303 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:42] "POST /register HTTP/1.1" 200 -
+2025-05-03 21:58:46,544 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:46] "GET /login HTTP/1.1" 200 -
+2025-05-03 21:58:54,150 - SERVER - INFO - Connection accepted from ('127.0.0.1', 63774)
+2025-05-03 21:58:54,150 - SERVER - INFO - Request received: LOGIN:azka:123
+2025-05-03 21:58:54,152 - CLIENT - WARNING - Failed login attempt for user 'azka'.
+2025-05-03 21:58:54,154 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:54] "POST /login HTTP/1.1" 200 -
+2025-05-03 21:58:57,696 - CLIENT - INFO - 127.0.0.1 - - [03/May/2025 21:58:57] "GET /register HTTP/1.1" 200 -
+2025-05-03 22:04:33,585 - CLIENT - INFO -  * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\user-authentication\\test.py', reloading
+2025-05-03 22:04:33,641 - CLIENT - INFO -  * Restarting with stat
+2025-05-03 22:04:34,204 - CLIENT - WARNING -  * Debugger is active!
+2025-05-03 22:04:34,209 - CLIENT - INFO -  * Debugger PIN: 266-960-421
+2025-05-03 22:04:34,245 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-05-03 22:07:49,556 - CLIENT - INFO -  * Detected change in 'C:\\Users\\S Link Solutions\\Desktop\\user-authentication\\test.py', reloading
+2025-05-03 22:07:49,607 - CLIENT - INFO -  * Restarting with stat
+2025-05-03 22:07:50,167 - CLIENT - WARNING -  * Debugger is active!
+2025-05-03 22:07:50,173 - CLIENT - INFO -  * Debugger PIN: 266-960-421
+2025-05-03 22:07:50,208 - CLIENT - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2025-05-03 22:08:18,283 - SERVER - INFO - Server started securely on localhost:12345
