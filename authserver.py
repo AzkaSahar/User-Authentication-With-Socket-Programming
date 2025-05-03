@@ -1,17 +1,19 @@
 import socket
 import ssl
 import sqlite3
-import hashlib
 import logging
+import bcrypt
 
 # Setup logging
 logging.basicConfig(filename='app.log', level=logging.INFO,
                     format='%(asctime)s - SERVER - %(levelname)s - %(message)s')
 
 def register_user(username, password):
-    hashed_password = hashlib.sha256(password.encode()).hexdigest()
+    hashed_password = bcrypt.hashpw(password.encode(), bcrypt.gensalt())
+
     conn = sqlite3.connect('users.db')
     cursor = conn.cursor()
+
     try:
         cursor.execute('SELECT username FROM users WHERE username=?', (username,))
         if cursor.fetchone():
@@ -28,15 +30,18 @@ def register_user(username, password):
     finally:
         conn.close()
 
+
 def authenticate_user(username, password):
     conn = sqlite3.connect('users.db')
     cursor = conn.cursor()
     cursor.execute('SELECT password FROM users WHERE username=?', (username,))
     result = cursor.fetchone()
     conn.close()
-    if result and hashlib.sha256(password.encode()).hexdigest() == result[0]:
+
+    if result and bcrypt.checkpw(password.encode(), result[0]):
         logging.info(f"User '{username}' authenticated successfully.")
         return "Success: User authenticated!"
+
     logging.warning(f"Authentication failed for user '{username}'.")
     return "Error: Invalid credentials."
 

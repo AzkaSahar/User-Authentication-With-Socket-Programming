@@ -3,13 +3,18 @@ import socket
 from flask_bootstrap import Bootstrap
 import ssl
 import logging
+import jwt
+import datetime
+
+
+JWT_SECRET = 'super_secret_jwt_key'
 
 # Setup logging
 logging.basicConfig(filename='app.log', level=logging.INFO,
                     format='%(asctime)s - CLIENT - %(levelname)s - %(message)s')
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
+app.secret_key = 'mykey'
 Bootstrap(app)
 
 SERVER_HOST = 'localhost'
@@ -40,12 +45,22 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+
         login_request = f"LOGIN:{username}:{password}"
         response = send_request_to_server(login_request)
 
         if "Success" in response:
+            # Create JWT token
+            token_payload = {
+                'username': username,
+                'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30)
+            }
+            token = jwt.encode(token_payload, JWT_SECRET, algorithm='HS256')
+
             session['username'] = username
-            logging.info(f"User '{username}' logged in successfully.")
+            session['token'] = token
+
+            logging.info(f"User '{username}' logged in. JWT issued.")
             flash('Login successful!', 'success')
             return redirect(url_for('success'))
         else:
@@ -74,15 +89,29 @@ def register():
 
 @app.route('/success')
 def success():
-    if 'username' not in session:
+    token = session.get('token')
+    if not token:
         flash('Please log in to access this page.', 'warning')
         return redirect(url_for('login'))
-    return render_template('success.html', username=session['username'])
+
+    try:
+        payload = jwt.decode(token, JWT_SECRET, algorithms=['HS256'])
+        username = payload['username']
+        return render_template('success.html', username=username, token=token)
+    except jwt.ExpiredSignatureError:
+        flash('Session expired. Please log in again.', 'danger')
+        logging.warning("JWT expired.")
+        return redirect(url_for('login'))
+    except jwt.InvalidTokenError:
+        flash('Invalid token. Please log in again.', 'danger')
+        logging.error("Invalid JWT detected.")
+        return redirect(url_for('login'))
 
 @app.route('/logout')
 def logout():
     username = session.pop('username', None)
-    logging.info(f"User '{username}' logged out.")
+    token = session.pop('token', None)
+    logging.info(f"User '{username}' logged out. JWT cleared.")
     flash('You have been logged out.', 'info')
     return redirect(url_for('login'))
 
